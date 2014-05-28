@@ -1,0 +1,20 @@
+/*! \mainpage Projektbeschreibung
+ *
+ * \section intro_sec Kurzbeschreibung
+ *
+ * \author Lukas Winkler & Janun Hornegger
+ *
+ *Mittels des Crumb Moduls und den Chip ATmega644PA, der auf dem Crumb Modul\n
+ *installiert ist, steuern wir das Gemini Board an. Wir steuern den I2C Bus an um \n
+ *eine Verbindung zum Temperatur Sensor herzustellen, weiters steuern wir noch die\n
+ *verbaute 7- Segment Anzeige an um die gelesenen Werte auszugeben. \n
+ *Um die Funktion noch zu erweitern steuern wir die RGB LED an um die Temperatur\n
+ *auch Visuell zur Schau zu stellen. Wobei Blau Kalt signalisiert und Rot Warm, um den\n
+ *Start des Gemini Boardes anzugeben wird der Summer einen gut h&ouml;rbaren Ton von sich geben. \n
+ *
+ * \section intro_sec Verwendete Hardware
+ *
+ *Verwendetes Modul: 	<a href="http://download.chip45.com/Crumb644_V1.1_infosheet.pdf" target="_blank" >Crumb-Modul mit ATmega644P</a>\n
+ *Verwendete Platine: 	<a href="C:\Arduino\GeminiLight\Platine">RCAS-Platine, Eigenfertigung</a>\n
+ *Verwendetes Device: 	<a href="http://www.gemini4.strh.at/" target="_blank" >Gemini 4.2</a>\n
+ */

@@ -1,0 +1,129 @@
+\hypertarget{_crumb_sens_8ino}{\section{C\-:/\-Arduino/\-Crumb\-Sens/\-Crumb\-Sens.ino File Reference}
+\label{_crumb_sens_8ino}\index{C\-:/\-Arduino/\-Crumb\-Sens/\-Crumb\-Sens.\-ino@{C\-:/\-Arduino/\-Crumb\-Sens/\-Crumb\-Sens.\-ino}}
+}
+{\ttfamily \#include \char`\"{}Soft\-I2\-C\-Master.\-h\char`\"{}}\\*
+{\ttfamily \#include $<$Liquid\-Crystal.\-h$>$}\\*
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{_crumb_sens_8ino_a7c9dedced025ba516393918592e3d36b}{address\-Temp}~0x48
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+Liquid\-Crystal \hyperlink{_crumb_sens_8ino_a59e74bd9e0aa6989df5d34630db59c8d}{lcd} (1, 2, 0, 31, 30, 29, 28, 27, 26, 25, 24)
+\item 
+void \hyperlink{_crumb_sens_8ino_a4fc01d736fe50cf5b977f755b675f11d}{setup} ()
+\item 
+void \hyperlink{_crumb_sens_8ino_afe461d27b9c48d5921c00d521181f12f}{loop} ()
+\item 
+int \hyperlink{_crumb_sens_8ino_a9a90ccf6fa5cb74d44133a5ee0bff148}{temp} ()
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+const byte \hyperlink{_crumb_sens_8ino_afa6793708eee64e6f0f328cbc61b5b22}{sda\-Pin} = 17
+\item 
+const byte \hyperlink{_crumb_sens_8ino_a22f7ca6ca71734a01a826f4abd36e13e}{scl\-Pin} = 16
+\item 
+\hyperlink{class_soft_i2_c_master}{Soft\-I2\-C\-Master} \hyperlink{_crumb_sens_8ino_a96d6210f68eedf93194e99ebe63ebdf2}{i2c} = \hyperlink{class_soft_i2_c_master}{Soft\-I2\-C\-Master}( \hyperlink{_crumb_sens_8ino_afa6793708eee64e6f0f328cbc61b5b22}{sda\-Pin},\hyperlink{_crumb_sens_8ino_a22f7ca6ca71734a01a826f4abd36e13e}{scl\-Pin} )
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\hypertarget{_crumb_sens_8ino_a7c9dedced025ba516393918592e3d36b}{\index{Crumb\-Sens.\-ino@{Crumb\-Sens.\-ino}!address\-Temp@{address\-Temp}}
+\index{address\-Temp@{address\-Temp}!CrumbSens.ino@{Crumb\-Sens.\-ino}}
+\subsubsection[{address\-Temp}]{\setlength{\rightskip}{0pt plus 5cm}\#define address\-Temp~0x48}}\label{_crumb_sens_8ino_a7c9dedced025ba516393918592e3d36b}
+
+
+Definition at line 2 of file Crumb\-Sens.\-ino.
+
+
+
+\subsection{Function Documentation}
+\hypertarget{_crumb_sens_8ino_a59e74bd9e0aa6989df5d34630db59c8d}{\index{Crumb\-Sens.\-ino@{Crumb\-Sens.\-ino}!lcd@{lcd}}
+\index{lcd@{lcd}!CrumbSens.ino@{Crumb\-Sens.\-ino}}
+\subsubsection[{lcd}]{\setlength{\rightskip}{0pt plus 5cm}Liquid\-Crystal lcd (
+\begin{DoxyParamCaption}
+\item[{1}]{, }
+\item[{2}]{, }
+\item[{0}]{, }
+\item[{31}]{, }
+\item[{30}]{, }
+\item[{29}]{, }
+\item[{28}]{, }
+\item[{27}]{, }
+\item[{26}]{, }
+\item[{25}]{, }
+\item[{24}]{}
+\end{DoxyParamCaption}
+)}}\label{_crumb_sens_8ino_a59e74bd9e0aa6989df5d34630db59c8d}
+\hypertarget{_crumb_sens_8ino_afe461d27b9c48d5921c00d521181f12f}{\index{Crumb\-Sens.\-ino@{Crumb\-Sens.\-ino}!loop@{loop}}
+\index{loop@{loop}!CrumbSens.ino@{Crumb\-Sens.\-ino}}
+\subsubsection[{loop}]{\setlength{\rightskip}{0pt plus 5cm}void loop (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{_crumb_sens_8ino_afe461d27b9c48d5921c00d521181f12f}
+Loop Funktion -\/ Standardmäßig von Arduino aufgerufen \begin{DoxySeeAlso}{See Also}
+arduino.\-h 
+\end{DoxySeeAlso}
+
+
+Definition at line 30 of file Crumb\-Sens.\-ino.
+
+\hypertarget{_crumb_sens_8ino_a4fc01d736fe50cf5b977f755b675f11d}{\index{Crumb\-Sens.\-ino@{Crumb\-Sens.\-ino}!setup@{setup}}
+\index{setup@{setup}!CrumbSens.ino@{Crumb\-Sens.\-ino}}
+\subsubsection[{setup}]{\setlength{\rightskip}{0pt plus 5cm}void setup (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{_crumb_sens_8ino_a4fc01d736fe50cf5b977f755b675f11d}
+Setup Funktion -\/ Standardmäßig von Arduino aufgerufen \begin{DoxySeeAlso}{See Also}
+arduino.\-h 
+\end{DoxySeeAlso}
+
+
+Definition at line 12 of file Crumb\-Sens.\-ino.
+
+\hypertarget{_crumb_sens_8ino_a9a90ccf6fa5cb74d44133a5ee0bff148}{\index{Crumb\-Sens.\-ino@{Crumb\-Sens.\-ino}!temp@{temp}}
+\index{temp@{temp}!CrumbSens.ino@{Crumb\-Sens.\-ino}}
+\subsubsection[{temp}]{\setlength{\rightskip}{0pt plus 5cm}int temp (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{_crumb_sens_8ino_a9a90ccf6fa5cb74d44133a5ee0bff148}
+I2\-C Übergabe Temperatur \begin{DoxyReturn}{Returns}
+Die Summe der beiden Zahlen a und b. 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{class_soft_i2_c_master}{Soft\-I2\-C\-Master} 
+\end{DoxySeeAlso}
+
+
+Definition at line 45 of file Crumb\-Sens.\-ino.
+
+
+
+\subsection{Variable Documentation}
+\hypertarget{_crumb_sens_8ino_a96d6210f68eedf93194e99ebe63ebdf2}{\index{Crumb\-Sens.\-ino@{Crumb\-Sens.\-ino}!i2c@{i2c}}
+\index{i2c@{i2c}!CrumbSens.ino@{Crumb\-Sens.\-ino}}
+\subsubsection[{i2c}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Soft\-I2\-C\-Master} i2c = {\bf Soft\-I2\-C\-Master}( {\bf sda\-Pin},{\bf scl\-Pin} )}}\label{_crumb_sens_8ino_a96d6210f68eedf93194e99ebe63ebdf2}
+
+
+Definition at line 6 of file Crumb\-Sens.\-ino.
+
+\hypertarget{_crumb_sens_8ino_a22f7ca6ca71734a01a826f4abd36e13e}{\index{Crumb\-Sens.\-ino@{Crumb\-Sens.\-ino}!scl\-Pin@{scl\-Pin}}
+\index{scl\-Pin@{scl\-Pin}!CrumbSens.ino@{Crumb\-Sens.\-ino}}
+\subsubsection[{scl\-Pin}]{\setlength{\rightskip}{0pt plus 5cm}const byte scl\-Pin = 16}}\label{_crumb_sens_8ino_a22f7ca6ca71734a01a826f4abd36e13e}
+
+
+Definition at line 5 of file Crumb\-Sens.\-ino.
+
+\hypertarget{_crumb_sens_8ino_afa6793708eee64e6f0f328cbc61b5b22}{\index{Crumb\-Sens.\-ino@{Crumb\-Sens.\-ino}!sda\-Pin@{sda\-Pin}}
+\index{sda\-Pin@{sda\-Pin}!CrumbSens.ino@{Crumb\-Sens.\-ino}}
+\subsubsection[{sda\-Pin}]{\setlength{\rightskip}{0pt plus 5cm}const byte sda\-Pin = 17}}\label{_crumb_sens_8ino_afa6793708eee64e6f0f328cbc61b5b22}
+
+
+Definition at line 4 of file Crumb\-Sens.\-ino.
+

@@ -1,0 +1,215 @@
+\hypertarget{class_soft_i2_c_master}{\section{Soft\-I2\-C\-Master Class Reference}
+\label{class_soft_i2_c_master}\index{Soft\-I2\-C\-Master@{Soft\-I2\-C\-Master}}
+}
+
+
+{\ttfamily \#include $<$Soft\-I2\-C\-Master.\-h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_soft_i2_c_master_a80269771e2fc8962bd5b7590158cf340}{Soft\-I2\-C\-Master} (uint8\-\_\-t \hyperlink{_gemini_light_8ino_afa6793708eee64e6f0f328cbc61b5b22}{sda\-Pin}, uint8\-\_\-t \hyperlink{_gemini_light_8ino_a22f7ca6ca71734a01a826f4abd36e13e}{scl\-Pin})
+\item 
+\hyperlink{class_soft_i2_c_master_af9970ff2978681dd6d61186434f493f9}{Soft\-I2\-C\-Master} (uint8\-\_\-t \hyperlink{_gemini_light_8ino_afa6793708eee64e6f0f328cbc61b5b22}{sda\-Pin}, uint8\-\_\-t \hyperlink{_gemini_light_8ino_a22f7ca6ca71734a01a826f4abd36e13e}{scl\-Pin}, uint8\-\_\-t use\-Pullups)
+\item 
+uint8\-\_\-t \hyperlink{class_soft_i2_c_master_ac39c24535036972ca9e6fa79819d5d9e}{begin\-Transmission} (uint8\-\_\-t address)
+\item 
+uint8\-\_\-t \hyperlink{class_soft_i2_c_master_a791bec13d09f3e1e49fbd7c72b1fd12d}{begin\-Transmission} (int address)
+\item 
+uint8\-\_\-t \hyperlink{class_soft_i2_c_master_aefc6d650a9b55fc313f101c90fb2a4a1}{end\-Transmission} (void)
+\item 
+uint8\-\_\-t \hyperlink{class_soft_i2_c_master_a1a8c899d3bf87bcf82a6d1688ed3209f}{send} (uint8\-\_\-t)
+\item 
+void \hyperlink{class_soft_i2_c_master_abc589462a3fa60debefb42b855b347b4}{send} (uint8\-\_\-t $\ast$, uint8\-\_\-t)
+\item 
+void \hyperlink{class_soft_i2_c_master_ae7c861a998e56ed481e3a5a9c3e54dfb}{send} (int)
+\item 
+void \hyperlink{class_soft_i2_c_master_ac3952f9139b53d2c8f37cca9efe02434}{send} (char $\ast$)
+\item 
+uint8\-\_\-t \hyperlink{class_soft_i2_c_master_aa59620fa4bd961b21a4ffef3e66e1060}{request\-From} (int address)
+\item 
+uint8\-\_\-t \hyperlink{class_soft_i2_c_master_a7da6a512db82ea053e1b625199d26f95}{request\-From} (uint8\-\_\-t address)
+\item 
+uint8\-\_\-t \hyperlink{class_soft_i2_c_master_afd5a89875814ef060773a2a198a2e752}{receive} (uint8\-\_\-t ack)
+\item 
+uint8\-\_\-t \hyperlink{class_soft_i2_c_master_afe5aba2a3a0b2bbf426f2c7e6d02f6b7}{receive} ()
+\item 
+uint8\-\_\-t \hyperlink{class_soft_i2_c_master_a77f7f5bde860f3db779f98b1be49e934}{receive\-Last} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 9 of file Soft\-I2\-C\-Master.\-h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_soft_i2_c_master_a80269771e2fc8962bd5b7590158cf340}{\index{Soft\-I2\-C\-Master@{Soft\-I2\-C\-Master}!Soft\-I2\-C\-Master@{Soft\-I2\-C\-Master}}
+\index{Soft\-I2\-C\-Master@{Soft\-I2\-C\-Master}!SoftI2CMaster@{Soft\-I2\-C\-Master}}
+\subsubsection[{Soft\-I2\-C\-Master}]{\setlength{\rightskip}{0pt plus 5cm}Soft\-I2\-C\-Master\-::\-Soft\-I2\-C\-Master (
+\begin{DoxyParamCaption}
+\item[{uint8\-\_\-t}]{sda\-Pin, }
+\item[{uint8\-\_\-t}]{scl\-Pin}
+\end{DoxyParamCaption}
+)}}\label{class_soft_i2_c_master_a80269771e2fc8962bd5b7590158cf340}
+
+
+Definition at line 48 of file Soft\-I2\-C\-Master.\-cpp.
+
+\hypertarget{class_soft_i2_c_master_af9970ff2978681dd6d61186434f493f9}{\index{Soft\-I2\-C\-Master@{Soft\-I2\-C\-Master}!Soft\-I2\-C\-Master@{Soft\-I2\-C\-Master}}
+\index{Soft\-I2\-C\-Master@{Soft\-I2\-C\-Master}!SoftI2CMaster@{Soft\-I2\-C\-Master}}
+\subsubsection[{Soft\-I2\-C\-Master}]{\setlength{\rightskip}{0pt plus 5cm}Soft\-I2\-C\-Master\-::\-Soft\-I2\-C\-Master (
+\begin{DoxyParamCaption}
+\item[{uint8\-\_\-t}]{sda\-Pin, }
+\item[{uint8\-\_\-t}]{scl\-Pin, }
+\item[{uint8\-\_\-t}]{use\-Pullups}
+\end{DoxyParamCaption}
+)}}\label{class_soft_i2_c_master_af9970ff2978681dd6d61186434f493f9}
+
+
+Definition at line 55 of file Soft\-I2\-C\-Master.\-cpp.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_soft_i2_c_master_ac39c24535036972ca9e6fa79819d5d9e}{\index{Soft\-I2\-C\-Master@{Soft\-I2\-C\-Master}!begin\-Transmission@{begin\-Transmission}}
+\index{begin\-Transmission@{begin\-Transmission}!SoftI2CMaster@{Soft\-I2\-C\-Master}}
+\subsubsection[{begin\-Transmission}]{\setlength{\rightskip}{0pt plus 5cm}uint8\-\_\-t Soft\-I2\-C\-Master\-::begin\-Transmission (
+\begin{DoxyParamCaption}
+\item[{uint8\-\_\-t}]{address}
+\end{DoxyParamCaption}
+)}}\label{class_soft_i2_c_master_ac39c24535036972ca9e6fa79819d5d9e}
+
+
+Definition at line 88 of file Soft\-I2\-C\-Master.\-cpp.
+
+\hypertarget{class_soft_i2_c_master_a791bec13d09f3e1e49fbd7c72b1fd12d}{\index{Soft\-I2\-C\-Master@{Soft\-I2\-C\-Master}!begin\-Transmission@{begin\-Transmission}}
+\index{begin\-Transmission@{begin\-Transmission}!SoftI2CMaster@{Soft\-I2\-C\-Master}}
+\subsubsection[{begin\-Transmission}]{\setlength{\rightskip}{0pt plus 5cm}uint8\-\_\-t Soft\-I2\-C\-Master\-::begin\-Transmission (
+\begin{DoxyParamCaption}
+\item[{int}]{address}
+\end{DoxyParamCaption}
+)}}\label{class_soft_i2_c_master_a791bec13d09f3e1e49fbd7c72b1fd12d}
+
+
+Definition at line 109 of file Soft\-I2\-C\-Master.\-cpp.
+
+\hypertarget{class_soft_i2_c_master_aefc6d650a9b55fc313f101c90fb2a4a1}{\index{Soft\-I2\-C\-Master@{Soft\-I2\-C\-Master}!end\-Transmission@{end\-Transmission}}
+\index{end\-Transmission@{end\-Transmission}!SoftI2CMaster@{Soft\-I2\-C\-Master}}
+\subsubsection[{end\-Transmission}]{\setlength{\rightskip}{0pt plus 5cm}uint8\-\_\-t Soft\-I2\-C\-Master\-::end\-Transmission (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{class_soft_i2_c_master_aefc6d650a9b55fc313f101c90fb2a4a1}
+
+
+Definition at line 117 of file Soft\-I2\-C\-Master.\-cpp.
+
+\hypertarget{class_soft_i2_c_master_afd5a89875814ef060773a2a198a2e752}{\index{Soft\-I2\-C\-Master@{Soft\-I2\-C\-Master}!receive@{receive}}
+\index{receive@{receive}!SoftI2CMaster@{Soft\-I2\-C\-Master}}
+\subsubsection[{receive}]{\setlength{\rightskip}{0pt plus 5cm}uint8\-\_\-t Soft\-I2\-C\-Master\-::receive (
+\begin{DoxyParamCaption}
+\item[{uint8\-\_\-t}]{ack}
+\end{DoxyParamCaption}
+)}}\label{class_soft_i2_c_master_afd5a89875814ef060773a2a198a2e752}
+
+
+Definition at line 295 of file Soft\-I2\-C\-Master.\-cpp.
+
+\hypertarget{class_soft_i2_c_master_afe5aba2a3a0b2bbf426f2c7e6d02f6b7}{\index{Soft\-I2\-C\-Master@{Soft\-I2\-C\-Master}!receive@{receive}}
+\index{receive@{receive}!SoftI2CMaster@{Soft\-I2\-C\-Master}}
+\subsubsection[{receive}]{\setlength{\rightskip}{0pt plus 5cm}uint8\-\_\-t Soft\-I2\-C\-Master\-::receive (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_soft_i2_c_master_afe5aba2a3a0b2bbf426f2c7e6d02f6b7}
+
+
+Definition at line 301 of file Soft\-I2\-C\-Master.\-cpp.
+
+\hypertarget{class_soft_i2_c_master_a77f7f5bde860f3db779f98b1be49e934}{\index{Soft\-I2\-C\-Master@{Soft\-I2\-C\-Master}!receive\-Last@{receive\-Last}}
+\index{receive\-Last@{receive\-Last}!SoftI2CMaster@{Soft\-I2\-C\-Master}}
+\subsubsection[{receive\-Last}]{\setlength{\rightskip}{0pt plus 5cm}uint8\-\_\-t Soft\-I2\-C\-Master\-::receive\-Last (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_soft_i2_c_master_a77f7f5bde860f3db779f98b1be49e934}
+
+
+Definition at line 307 of file Soft\-I2\-C\-Master.\-cpp.
+
+\hypertarget{class_soft_i2_c_master_aa59620fa4bd961b21a4ffef3e66e1060}{\index{Soft\-I2\-C\-Master@{Soft\-I2\-C\-Master}!request\-From@{request\-From}}
+\index{request\-From@{request\-From}!SoftI2CMaster@{Soft\-I2\-C\-Master}}
+\subsubsection[{request\-From}]{\setlength{\rightskip}{0pt plus 5cm}uint8\-\_\-t Soft\-I2\-C\-Master\-::request\-From (
+\begin{DoxyParamCaption}
+\item[{int}]{address}
+\end{DoxyParamCaption}
+)}}\label{class_soft_i2_c_master_aa59620fa4bd961b21a4ffef3e66e1060}
+
+
+Definition at line 103 of file Soft\-I2\-C\-Master.\-cpp.
+
+\hypertarget{class_soft_i2_c_master_a7da6a512db82ea053e1b625199d26f95}{\index{Soft\-I2\-C\-Master@{Soft\-I2\-C\-Master}!request\-From@{request\-From}}
+\index{request\-From@{request\-From}!SoftI2CMaster@{Soft\-I2\-C\-Master}}
+\subsubsection[{request\-From}]{\setlength{\rightskip}{0pt plus 5cm}uint8\-\_\-t Soft\-I2\-C\-Master\-::request\-From (
+\begin{DoxyParamCaption}
+\item[{uint8\-\_\-t}]{address}
+\end{DoxyParamCaption}
+)}}\label{class_soft_i2_c_master_a7da6a512db82ea053e1b625199d26f95}
+
+
+Definition at line 96 of file Soft\-I2\-C\-Master.\-cpp.
+
+\hypertarget{class_soft_i2_c_master_a1a8c899d3bf87bcf82a6d1688ed3209f}{\index{Soft\-I2\-C\-Master@{Soft\-I2\-C\-Master}!send@{send}}
+\index{send@{send}!SoftI2CMaster@{Soft\-I2\-C\-Master}}
+\subsubsection[{send}]{\setlength{\rightskip}{0pt plus 5cm}uint8\-\_\-t Soft\-I2\-C\-Master\-::send (
+\begin{DoxyParamCaption}
+\item[{uint8\-\_\-t}]{data}
+\end{DoxyParamCaption}
+)}}\label{class_soft_i2_c_master_a1a8c899d3bf87bcf82a6d1688ed3209f}
+
+
+Definition at line 127 of file Soft\-I2\-C\-Master.\-cpp.
+
+\hypertarget{class_soft_i2_c_master_abc589462a3fa60debefb42b855b347b4}{\index{Soft\-I2\-C\-Master@{Soft\-I2\-C\-Master}!send@{send}}
+\index{send@{send}!SoftI2CMaster@{Soft\-I2\-C\-Master}}
+\subsubsection[{send}]{\setlength{\rightskip}{0pt plus 5cm}void Soft\-I2\-C\-Master\-::send (
+\begin{DoxyParamCaption}
+\item[{uint8\-\_\-t $\ast$}]{data, }
+\item[{uint8\-\_\-t}]{quantity}
+\end{DoxyParamCaption}
+)}}\label{class_soft_i2_c_master_abc589462a3fa60debefb42b855b347b4}
+
+
+Definition at line 135 of file Soft\-I2\-C\-Master.\-cpp.
+
+\hypertarget{class_soft_i2_c_master_ae7c861a998e56ed481e3a5a9c3e54dfb}{\index{Soft\-I2\-C\-Master@{Soft\-I2\-C\-Master}!send@{send}}
+\index{send@{send}!SoftI2CMaster@{Soft\-I2\-C\-Master}}
+\subsubsection[{send}]{\setlength{\rightskip}{0pt plus 5cm}void Soft\-I2\-C\-Master\-::send (
+\begin{DoxyParamCaption}
+\item[{int}]{data}
+\end{DoxyParamCaption}
+)}}\label{class_soft_i2_c_master_ae7c861a998e56ed481e3a5a9c3e54dfb}
+
+
+Definition at line 153 of file Soft\-I2\-C\-Master.\-cpp.
+
+\hypertarget{class_soft_i2_c_master_ac3952f9139b53d2c8f37cca9efe02434}{\index{Soft\-I2\-C\-Master@{Soft\-I2\-C\-Master}!send@{send}}
+\index{send@{send}!SoftI2CMaster@{Soft\-I2\-C\-Master}}
+\subsubsection[{send}]{\setlength{\rightskip}{0pt plus 5cm}void Soft\-I2\-C\-Master\-::send (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{data}
+\end{DoxyParamCaption}
+)}}\label{class_soft_i2_c_master_ac3952f9139b53d2c8f37cca9efe02434}
+
+
+Definition at line 145 of file Soft\-I2\-C\-Master.\-cpp.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_soft_i2_c_master_8h}{Soft\-I2\-C\-Master.\-h}\item 
+\hyperlink{_soft_i2_c_master_8cpp}{Soft\-I2\-C\-Master.\-cpp}\end{DoxyCompactItemize}

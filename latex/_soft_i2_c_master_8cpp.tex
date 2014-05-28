@@ -1,0 +1,138 @@
+\hypertarget{_soft_i2_c_master_8cpp}{\section{Soft\-I2\-C\-Master.\-cpp File Reference}
+\label{_soft_i2_c_master_8cpp}\index{Soft\-I2\-C\-Master.\-cpp@{Soft\-I2\-C\-Master.\-cpp}}
+}
+{\ttfamily \#include $<$W\-Program.\-h$>$}\\*
+{\ttfamily \#include \char`\"{}./\-Soft\-I2\-C\-Master.\-h\char`\"{}}\\*
+{\ttfamily \#include $<$util/delay.\-h$>$}\\*
+{\ttfamily \#include $<$string.\-h$>$}\\*
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{_soft_i2_c_master_8cpp_a74fda692e01c20f8f3e3eb6e36b9f88f}{i2cbitdelay}~50
+\item 
+\#define \hyperlink{_soft_i2_c_master_8cpp_ad4e158b4c0d408e5d99a514c0db0d77b}{I2\-C\-\_\-\-A\-C\-K}~1
+\item 
+\#define \hyperlink{_soft_i2_c_master_8cpp_a685156832f7dddd3e57569efd8c012a0}{I2\-C\-\_\-\-N\-A\-K}~0
+\item 
+\#define \hyperlink{_soft_i2_c_master_8cpp_aa6f85c533e52658a110514260dbee7f7}{i2c\-\_\-scl\-\_\-release}()~$\ast$\-\_\-scl\-Dir\-Reg     \&=$\sim$ \-\_\-scl\-Bit\-Mask
+\item 
+\#define \hyperlink{_soft_i2_c_master_8cpp_a11cc1f1ff70f35bdab2d7371feb05953}{i2c\-\_\-sda\-\_\-release}()~$\ast$\-\_\-sda\-Dir\-Reg     \&=$\sim$ \-\_\-sda\-Bit\-Mask
+\item 
+\#define \hyperlink{_soft_i2_c_master_8cpp_aba5fc21c5bd72a34a3501165b68ae96e}{i2c\-\_\-sda\-\_\-lo}()
+\item 
+\#define \hyperlink{_soft_i2_c_master_8cpp_afffa8758742024a6aba325e73940e1cb}{i2c\-\_\-scl\-\_\-lo}()
+\item 
+\#define \hyperlink{_soft_i2_c_master_8cpp_a07418ad412ccd643b25142d71eee1267}{i2c\-\_\-sda\-\_\-hi}()
+\item 
+\#define \hyperlink{_soft_i2_c_master_8cpp_a683f18e5cd83b4c676e1e3fc15ead5f1}{i2c\-\_\-scl\-\_\-hi}()
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\hypertarget{_soft_i2_c_master_8cpp_ad4e158b4c0d408e5d99a514c0db0d77b}{\index{Soft\-I2\-C\-Master.\-cpp@{Soft\-I2\-C\-Master.\-cpp}!I2\-C\-\_\-\-A\-C\-K@{I2\-C\-\_\-\-A\-C\-K}}
+\index{I2\-C\-\_\-\-A\-C\-K@{I2\-C\-\_\-\-A\-C\-K}!SoftI2CMaster.cpp@{Soft\-I2\-C\-Master.\-cpp}}
+\subsubsection[{I2\-C\-\_\-\-A\-C\-K}]{\setlength{\rightskip}{0pt plus 5cm}\#define I2\-C\-\_\-\-A\-C\-K~1}}\label{_soft_i2_c_master_8cpp_ad4e158b4c0d408e5d99a514c0db0d77b}
+
+
+Definition at line 14 of file Soft\-I2\-C\-Master.\-cpp.
+
+\hypertarget{_soft_i2_c_master_8cpp_a685156832f7dddd3e57569efd8c012a0}{\index{Soft\-I2\-C\-Master.\-cpp@{Soft\-I2\-C\-Master.\-cpp}!I2\-C\-\_\-\-N\-A\-K@{I2\-C\-\_\-\-N\-A\-K}}
+\index{I2\-C\-\_\-\-N\-A\-K@{I2\-C\-\_\-\-N\-A\-K}!SoftI2CMaster.cpp@{Soft\-I2\-C\-Master.\-cpp}}
+\subsubsection[{I2\-C\-\_\-\-N\-A\-K}]{\setlength{\rightskip}{0pt plus 5cm}\#define I2\-C\-\_\-\-N\-A\-K~0}}\label{_soft_i2_c_master_8cpp_a685156832f7dddd3e57569efd8c012a0}
+
+
+Definition at line 15 of file Soft\-I2\-C\-Master.\-cpp.
+
+\hypertarget{_soft_i2_c_master_8cpp_a683f18e5cd83b4c676e1e3fc15ead5f1}{\index{Soft\-I2\-C\-Master.\-cpp@{Soft\-I2\-C\-Master.\-cpp}!i2c\-\_\-scl\-\_\-hi@{i2c\-\_\-scl\-\_\-hi}}
+\index{i2c\-\_\-scl\-\_\-hi@{i2c\-\_\-scl\-\_\-hi}!SoftI2CMaster.cpp@{Soft\-I2\-C\-Master.\-cpp}}
+\subsubsection[{i2c\-\_\-scl\-\_\-hi}]{\setlength{\rightskip}{0pt plus 5cm}\#define i2c\-\_\-scl\-\_\-hi(
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{_soft_i2_c_master_8cpp_a683f18e5cd83b4c676e1e3fc15ead5f1}
+{\bfseries Value\-:}
+\begin{DoxyCode}
+*\_sclDirReg   &=~ \_sclBitMask;  \(\backslash\)
+    if(usePullups) \{ *\_sclPortReg  |=  \_sclBitMask; \}
+\end{DoxyCode}
+
+
+Definition at line 39 of file Soft\-I2\-C\-Master.\-cpp.
+
+\hypertarget{_soft_i2_c_master_8cpp_afffa8758742024a6aba325e73940e1cb}{\index{Soft\-I2\-C\-Master.\-cpp@{Soft\-I2\-C\-Master.\-cpp}!i2c\-\_\-scl\-\_\-lo@{i2c\-\_\-scl\-\_\-lo}}
+\index{i2c\-\_\-scl\-\_\-lo@{i2c\-\_\-scl\-\_\-lo}!SoftI2CMaster.cpp@{Soft\-I2\-C\-Master.\-cpp}}
+\subsubsection[{i2c\-\_\-scl\-\_\-lo}]{\setlength{\rightskip}{0pt plus 5cm}\#define i2c\-\_\-scl\-\_\-lo(
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{_soft_i2_c_master_8cpp_afffa8758742024a6aba325e73940e1cb}
+{\bfseries Value\-:}
+\begin{DoxyCode}
+*\_sclPortReg  &=~ \_sclBitMask;  \(\backslash\)
+                     *\_sclDirReg   |=  \_sclBitMask;
+\end{DoxyCode}
+
+
+Definition at line 29 of file Soft\-I2\-C\-Master.\-cpp.
+
+\hypertarget{_soft_i2_c_master_8cpp_aa6f85c533e52658a110514260dbee7f7}{\index{Soft\-I2\-C\-Master.\-cpp@{Soft\-I2\-C\-Master.\-cpp}!i2c\-\_\-scl\-\_\-release@{i2c\-\_\-scl\-\_\-release}}
+\index{i2c\-\_\-scl\-\_\-release@{i2c\-\_\-scl\-\_\-release}!SoftI2CMaster.cpp@{Soft\-I2\-C\-Master.\-cpp}}
+\subsubsection[{i2c\-\_\-scl\-\_\-release}]{\setlength{\rightskip}{0pt plus 5cm}\#define i2c\-\_\-scl\-\_\-release(
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)~$\ast$\-\_\-scl\-Dir\-Reg     \&=$\sim$ \-\_\-scl\-Bit\-Mask}}\label{_soft_i2_c_master_8cpp_aa6f85c533e52658a110514260dbee7f7}
+
+
+Definition at line 18 of file Soft\-I2\-C\-Master.\-cpp.
+
+\hypertarget{_soft_i2_c_master_8cpp_a07418ad412ccd643b25142d71eee1267}{\index{Soft\-I2\-C\-Master.\-cpp@{Soft\-I2\-C\-Master.\-cpp}!i2c\-\_\-sda\-\_\-hi@{i2c\-\_\-sda\-\_\-hi}}
+\index{i2c\-\_\-sda\-\_\-hi@{i2c\-\_\-sda\-\_\-hi}!SoftI2CMaster.cpp@{Soft\-I2\-C\-Master.\-cpp}}
+\subsubsection[{i2c\-\_\-sda\-\_\-hi}]{\setlength{\rightskip}{0pt plus 5cm}\#define i2c\-\_\-sda\-\_\-hi(
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{_soft_i2_c_master_8cpp_a07418ad412ccd643b25142d71eee1267}
+{\bfseries Value\-:}
+\begin{DoxyCode}
+*\_sdaDirReg   &=~ \_sdaBitMask;  \(\backslash\)
+    if(usePullups) \{ *\_sdaPortReg  |=  \_sdaBitMask; \}
+\end{DoxyCode}
+
+
+Definition at line 34 of file Soft\-I2\-C\-Master.\-cpp.
+
+\hypertarget{_soft_i2_c_master_8cpp_aba5fc21c5bd72a34a3501165b68ae96e}{\index{Soft\-I2\-C\-Master.\-cpp@{Soft\-I2\-C\-Master.\-cpp}!i2c\-\_\-sda\-\_\-lo@{i2c\-\_\-sda\-\_\-lo}}
+\index{i2c\-\_\-sda\-\_\-lo@{i2c\-\_\-sda\-\_\-lo}!SoftI2CMaster.cpp@{Soft\-I2\-C\-Master.\-cpp}}
+\subsubsection[{i2c\-\_\-sda\-\_\-lo}]{\setlength{\rightskip}{0pt plus 5cm}\#define i2c\-\_\-sda\-\_\-lo(
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{_soft_i2_c_master_8cpp_aba5fc21c5bd72a34a3501165b68ae96e}
+{\bfseries Value\-:}
+\begin{DoxyCode}
+*\_sdaPortReg  &=~ \_sdaBitMask;  \(\backslash\)
+                     *\_sdaDirReg   |=  \_sdaBitMask;
+\end{DoxyCode}
+
+
+Definition at line 24 of file Soft\-I2\-C\-Master.\-cpp.
+
+\hypertarget{_soft_i2_c_master_8cpp_a11cc1f1ff70f35bdab2d7371feb05953}{\index{Soft\-I2\-C\-Master.\-cpp@{Soft\-I2\-C\-Master.\-cpp}!i2c\-\_\-sda\-\_\-release@{i2c\-\_\-sda\-\_\-release}}
+\index{i2c\-\_\-sda\-\_\-release@{i2c\-\_\-sda\-\_\-release}!SoftI2CMaster.cpp@{Soft\-I2\-C\-Master.\-cpp}}
+\subsubsection[{i2c\-\_\-sda\-\_\-release}]{\setlength{\rightskip}{0pt plus 5cm}\#define i2c\-\_\-sda\-\_\-release(
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)~$\ast$\-\_\-sda\-Dir\-Reg     \&=$\sim$ \-\_\-sda\-Bit\-Mask}}\label{_soft_i2_c_master_8cpp_a11cc1f1ff70f35bdab2d7371feb05953}
+
+
+Definition at line 20 of file Soft\-I2\-C\-Master.\-cpp.
+
+\hypertarget{_soft_i2_c_master_8cpp_a74fda692e01c20f8f3e3eb6e36b9f88f}{\index{Soft\-I2\-C\-Master.\-cpp@{Soft\-I2\-C\-Master.\-cpp}!i2cbitdelay@{i2cbitdelay}}
+\index{i2cbitdelay@{i2cbitdelay}!SoftI2CMaster.cpp@{Soft\-I2\-C\-Master.\-cpp}}
+\subsubsection[{i2cbitdelay}]{\setlength{\rightskip}{0pt plus 5cm}\#define i2cbitdelay~50}}\label{_soft_i2_c_master_8cpp_a74fda692e01c20f8f3e3eb6e36b9f88f}
+
+
+Definition at line 12 of file Soft\-I2\-C\-Master.\-cpp.
+
